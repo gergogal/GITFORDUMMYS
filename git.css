@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(173, 173, 173);
+    font-size: large;
+    color: rgb(253, 2, 2);
+}
+
+#git {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.elso {
+    text-align: center;
+}
+
+.kepek {
+    width: 400px;
+    height: 230px;
+    float: inherit;
+}

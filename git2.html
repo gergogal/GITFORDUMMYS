@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="git.css">
+    <title>Document</title>
+</head>
+<body>
+    <p id="git"><a id="gitparancsok"><b><u>GIT parancsok</u></b></a></p>
+    <p class="elso"> A Git egy verziókezelő, arra szolgál, hogy fileok (programok, dokumentációk, stb) különböző verzióit kordában tartsa, elkönyvelje, tárolja és megossza. A Git-et legegyszerűbben egy fájlrendszerként képzelhetjük el. Amikor létrehozunk egy verziót (commit), egyszerűen fogjuk a projekt aktuális változatát, és kimásoljuk egy könyvtárba, aminek a neve a felhasználói nevünkből és egy dátumból áll össze. Mondjuk valami ilyesmi: TheBojda_201902242053. Aztán fejlesztgetünk tovább, és ha megint úgy gondoljuk, létrehozunk egy új verziót, vagyis megint kimásoljuk az aktuális fájlokat egy könyvtárba. A verziókat aztán visszanézhetjük, megnézhetjük mi változott, vagy visszatérhetünk egy régebbi verzióra ha szükséges. A verziókon kívül van egy másik fogalom is Git-ben, az ág (branch). Ha létrehozunk egy ágat, akkor az egész projektet verziókkal együtt kimásoljuk egy külön könyvtárba, aminek szabadon választható nevet adhatunk. A Git tehát egy olyan fájlrendszer, ami branch-eket tartalmaz (ezeket most képzeljük könyvtáraknak), amin belül commitok (verziók — ezeket is képzeljük könytáraknak a branch-eken belül) vannak. Mivel mindig valamilyen branch alatt vagyunk, ezért létezik egy alapértelmezett branch, amit master-nek hívnak. </p>
+    <p>Dióhéjban annyi a lényeg, hogy az olyan hash alapú fájlrendszerek, mint az IPFS vagy a Git egy adott fájlt csak egyszer tárolnak, akárhány példány is legyen belőle a fájlrendszerben. Innentől kezdve nem érdekes, hogy hány verziót vagy branch-et hozunk létre, ezek szinte semmi helyet nem foglalnak, hiszen csak a megváltozott fájlokat kell pluszban eltárolnunk. A Git ráadásul tud még egy trükköt. Képes a tárolót egyetlen pack fájlba tömöríteni, ami az egyes fájl változatok közötti változásokat tárolja csak, ráadásul ezt is tömörített formában. Ennek az okos tárolásnak köszönhetően nagyon gyorsan és minimális tárhely felhasználás mellett készíthetünk branch-eket. Úgy is szokták mondani, hogy a Git esetén “olcsó” a branch-elés, amit a Git-et használó fejlesztők erősen ki is hasznának (erre később látunk majd példát). A Git a branch-eket és a verziókat a fent leírt tömörített formában a .git köyvtárban tárolja. Ha dolgozni akarunk egy változattal, azt ki kell bontanunk. Ezt hívjuk checkout-nak.</p>
+
+    <p id="git"><a id="githubrol"><u><b>GITHUB-ról</b></u></a></p>
+    <p class="eleje">Aki foglalkozott már nyílt forrású projektek fejlesztésével, az valószínűleg belefutott már a problémába, hogy ha elkészült, a végeredményt hogy ossza meg másokkal.
+        Az egyik lehetőség, hogy összerakhatunk erre egy saját honlapot, beállítunk saját verziókezelő és hibajegy kezelő rendszert, stb.
+        Ez adott esetben elég sok munka, sok karbantartást igényel, és többnyire felesleges is.
+        A másik lehetőség, hogy választunk valamilyen project hosting rendszert, ahol mindez adott.
+        Több ilyen rendszer is létezik, és mind ingyenesen elérhető. 
+        A legismertebbek talán a SourceForge, a Google Project Hosting, és egy viszonylag új játékos, a GitHub. 
+        Ez utóbbiról fogok kicsit bővebben írni, mivel véleményem szerint ez a jelenleg elérhető legjobb ilyen rendszer.</p>
+    <p>De mégis mit nyújt egy ilyen project hosting rendszer, és mi az ami ezek közül kiemeli a GitHub-ot?<br/> 
+        Egy project hosting rendszer többnyire mindent készen nyújt, ami egy nyílt forrású rendszer publikálásához, és karbantartásához kell. 
+        Alapvetően mindenhol kapunk egy verziókezelő rendszert, valamilyen hibajegy kezelő rendszert (issue tracker), és valami wiki féleséget, ahol leírásokat és dokumentációt készíthetünk a rendszerhez. 
+        Így tulajdonképpen minden adott, ami egy ilyen projekt futtatásához szükséges.
+        <br/>De mi az, amiben a GitHub különleges?<br/> 
+        Először is, más rendszerekkel ellentétben a GitHub egyfajta közösségi tér is.
+        Regisztrált felhasználóként feliratkozhatunk az egyes projektekhez megfigyelőként, így értesülhetünk a projektet érintő változásokról.
+        Ha nagyon hasonlítani akarnám valamihez, azt mondhatnám, hogy olyan ez, mint a nyílt forrású projektek Facebook-ja.
+        A történések itt is egy newsfeed-ben gyűlnek össze, minden felhasználónak van profilja, stb. Igazából mindezek a lehetőségek más rendszerekben is adottak, de míg mondjuk a Google rendszerében RSS feed-ekkel kell bajlódnunk, addig itt tényleg minden olyan könnyedén megy, mint Facebook-on.<br/> 
+        Csak bekattintjuk a projektet, és már ott is van a newsfeed-ben.
+        </p>
+    <a href="git.html"><img src="159408220_1353248835055140_5835393357251998271_n.jpg" alt="vissza"></a>
+    <p><a href="#gitparancsok">GIT parancsokról</a></p>
+    <p><a href="#githubrol">A GITHUB-ról</a></p>
+</body>
+</html>
